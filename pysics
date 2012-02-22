@@ -18,13 +18,13 @@ Escribe el numero y presiona enter: """)
 		while mrut == False:
 			mrutt = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)TIEMPO \n2)VELOCIDAD \n3)DISTANCIA \nEscribi la primera letra (en minuscula) de la palabra y pulsa enter:")
 			if mrutt == "2":
-				print float(input("Escribi la distancia en metros y apreta enter: ")) / input("Escribi el tiempo en segundos y presiona enter: "), "m/s, es tu velocidad."
+				print float(input("Escribi la distancia en metros y apreta enter: ")) / input("Escribi el tiempo en segundos y presiona enter: "), "m/s, es tu velocidad.", raw_input("\nPresiona enter para salir")
 				mrut = True
 			elif mrutt == "1":
-				print float(input("Escribi la distancia en metros y apreta enter: ")) / input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: "), "s, es tu tiempo."
+				print float(input("Escribi la distancia en metros y apreta enter: ")) / input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: "), "s, es tu tiempo.", raw_input("\nPresiona enter para salir")
 				mrut = True
 			elif mrutt == "3":
-				print float(input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: ")) * input("Escribi el tiempo en segundos y presiona enter: "), "m, es tu distancia"
+				print float(input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: ")) * input("Escribi el tiempo en segundos y presiona enter: "), "m, es tu distancia", raw_input("\nPresiona enter para salir")
 				mrut = True
 			else:
 				print "Esa opcion no es valida, presiona enter para continuar", raw_input()
@@ -38,23 +38,23 @@ Escribe el numero y presiona enter: """)
 				mruvtb = input("Escribi la velocidad[Si NO tenes velocidad escribi 1 y apreta enter] en m/s (metros por segundo) y apreta enter: ")
 			if mruvtb == 1:
 				v = float(input("Escribi la distancia en metros y apreta enter: ")) / input("Escribi el tiempo en segundos y presiona enter: ")**2
-				print v, "m/s^2, es tu aceleracion"
+				print v, "m/s^2, es tu aceleracion", raw_input("\nPresiona enter para salir")
 				mruvt = True
 				exit()
 			if mruvtb != 0:
-				print float(mruvtb) / input("Escribi el tiempo en segundos y presiona enter: "), "m/s^2, es tu aceleracion"
+				print float(mruvtb) / input("Escribi el tiempo en segundos y presiona enter: "), "m/s^2, es tu aceleracion", raw_input("\nPresiona enter para salir")
 				mruvt = True
 				exit()
 			if mruvtt == "2":
-				print float(input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: ")) / input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: "), "s, es tu tiempo."
+				print float(input("Escribi la velocidad en M/S (metros por segundo) y apreta enter: ")) / input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: "), "s, es tu tiempo.", raw_input("\nPresiona enter para salir")
 				mruvt = True
 				exit()
 			if mruvtt == "3":
-				print input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: ") * float(input("Escribi el tiempo en segundos y presiona enter: ")), "m/s, es tu velocidad."
+				print input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: ") * float(input("Escribi el tiempo en segundos y presiona enter: ")), "m/s, es tu velocidad.", raw_input("\nPresiona enter para salir")
 				mruvt = True
 				exit()
 			if mruvtt == "4":
-				print input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: ") * float(input("Escribi el tiempo en segundos y presiona enter: "))**2, "m, es tu distancia."
+				print input("Escribi la aceleracion en m/s^2 (metros por segundo al cuadrado) y apreta enter: ") * float(input("Escribi el tiempo en segundos y presiona enter: "))**2, "m, es tu distancia.", raw_input("\nPresiona enter para salir")
 				mruvt = True
 				exit()
 			else:
@@ -66,13 +66,13 @@ Escribe el numero y presiona enter: """)
 		while mcu == False:
 			mcut = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)VELOCIDAD ANGULAR \n2)VELOCIDAD TANGENCIAL \n3)R.P.M. \nEscribi el numero y pulsa enter: ")
 			if mcut == "1":
-				print 6.28 / input("Escribi el tiempo en segundos y apreta enter: "), "1/s, es tu velocidad angular."
+				print 6.28 / input("Escribi el tiempo en segundos y apreta enter: "), "1/s, es tu velocidad angular.", raw_input("\nPresiona enter para salir")
 				mcu = True
 			elif mcut == "2":
-				print (6.28 / input("Escribi el tiempo en segundos y apreta enter: ") * input("Escribe tu radio en metros y apreta enter: ")), "m/s, es tu velocidad tangencial."
+				print (6.28 / input("Escribi el tiempo en segundos y apreta enter: ") * input("Escribe tu radio en metros y apreta enter: ")), "m/s, es tu velocidad tangencial.", raw_input("\nPresiona enter para salir")
 				mcu = True
 			elif mcut == "3":
-				print (input("Escribi tu velocidad en rad/s y apreta enter: ") / 6.28) * 60, "R.P.M."
+				print (input("Escribi tu velocidad en rad/s y apreta enter: ") / 6.28) * 60, "R.P.M.", raw_input("\nPresiona enter para salir")
 				mcu = True
 			else:
 				print "Esa opcion no es valida, presiona enter para continuar", raw_input()
@@ -83,10 +83,10 @@ Escribe el numero y presiona enter: """)
 		while not mcuv:
 			mcuvt = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)ACELERACION CENTRIPETA \n2)FUERZA CENTRIPETA")
 			if mcuvt == "1":
-				print (float(input("Escribi la velocidad angular en rad/s y apreta enter: ")) ** 2) * input("Escribi tu radio en metros y apreta enter: "), "m/s^2, es tu aceleracion."
+				print (float(input("Escribi la velocidad angular en rad/s y apreta enter: ")) ** 2) * input("Escribi tu radio en metros y apreta enter: "), "m/s^2, es tu aceleracion.", raw_input("\nPresiona enter para salir")
 				mcuv = True
 			if mcuvt == "2":
-				print float(input("Escribi tu masa en kg y pulsa enter: ")) * input("Escribi tu aceleracion en m/s^2 y pulsa enter: "), "N, es tu fuerza."
+				print float(input("Escribi tu masa en kg y pulsa enter: ")) * input("Escribi tu aceleracion en m/s^2 y pulsa enter: "), "N, es tu fuerza.", raw_input("\nPresiona enter para salir")
 				mcuv = True
 		entrada = True
 #Caida libre
@@ -95,13 +95,13 @@ Escribe el numero y presiona enter: """)
 		while cait == False:
 			caitl = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)TIEMPO \n2)DISTANCIA \n3)VELOCIDAD FINAL \nEscribi el numero y pulsa enter: ")
 			if caitl == "1":
-				print ((float(input("Escribi la altura en metros y apreta enter: ")) * 2) / 9.8) ** 0.5, "s, es tu tiempo."
+				print ((float(input("Escribi la altura en metros y apreta enter: ")) * 2) / 9.8) ** 0.5, "s, es tu tiempo.", raw_input("\nPresiona enter para salir")
 				cait = True
 			if caitl == "2":
-				print (float(input("Escribi el tiempo en segundos y apreta enter: ")) ** 2) * 4.9, "m, es tu distancia."				
+				print (float(input("Escribi el tiempo en segundos y apreta enter: ")) ** 2) * 4.9, "m, es tu distancia.", raw_input("\nPresiona enter para salir")				
 				cait = True
 			if caitl == "3":
-				catil = float(input("Escribi el tiempo en segundos y apreta enter: ")) * 9.8, "m/s, es tu velocidad."
+				catil = float(input("Escribi el tiempo en segundos y apreta enter: ")) * 9.8, "m/s, es tu velocidad.", raw_input("\nPresiona enter para salir")
 				cait = True
 			else:
 				print "Esa opcion no es valida, presiona enter para continuar", raw_input()
