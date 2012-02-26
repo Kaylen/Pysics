@@ -81,7 +81,7 @@ Escribe el numero y presiona enter: """)
 	elif a == "4":
 		mcuv = False
 		while not mcuv:
-			mcuvt = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)ACELERACION CENTRIPETA \n2)FUERZA CENTRIPETA")
+			mcuvt = raw_input("!!!NOTA IMPORTANTE: NUMEROS CON DECIMALES ESCRIBILOS CON PUNTO NO CON COMA!!! \nQue quieres calcular? \n1)ACELERACION CENTRIPETA \n2)FUERZA CENTRIPETA \nEscribi el numero y pulsa enter: ")
 			if mcuvt == "1":
 				print (float(input("Escribi la velocidad angular en rad/s y apreta enter: ")) ** 2) * input("Escribi tu radio en metros y apreta enter: "), "m/s^2, es tu aceleracion.", raw_input("\nPresiona enter para salir")
 				mcuv = True
