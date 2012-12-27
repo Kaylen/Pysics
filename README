@@ -1,2 +1,5 @@
-Para ejecutar en linux hacer primero hay que darle permisos de ejecucion, ir hasta el directorio donde se encuentra el archivo hacer click derecho propiedades, e ir a la pestaña permisos ahi marcar la opcion permitir ejecutar archivo como un programa y cerrar. Luego hacer doble click y en la ventana eligen la opcion ejecutar en un terminal. 
-En Windows hacer doble click para abrir.
+Para ejecutar el programa hay que tener instalado el intérprete de python.
+En Windows se puede instalar como un programa normal descargandolode la 
+página oficial "python.org/download/".
+Todas las distribuciones de linux tienen el intérprete de python instalado
+por defecto, por lo tanto, basta con darle permiso de ejecución y ejecutarlo.
